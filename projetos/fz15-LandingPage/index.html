@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--My style-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+   
+
+    <title>Nova FZ15 - Fazer 150</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <!--menu-->
+                    <div class="col-md-7">
+                        <nav class="navbar  navbar-dark ">
+                            <div class="container-fluid">
+                                <button id="menu-btn" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                    <!-- <span class="navbar-toggler-icon"></span> -->
+                                    <span style="background-image:url('./img/menu-icone.png') ;"></span>
+                                  </button>
+                                <a class="navbar-brand " href="#"><img class="logo" src="./img/YamahaLogo.png" alt="Yamaha logo"></a>
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo" src="./img/YamahaLogo.png" alt=""></h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                              <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      <form class="d-flex mt-3" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </nav>
+        
+                        <!--user area-->
+
+                        <div class="col-md-5">
+                            <div id="user-area">
+                                    <a href="">Minha conta</a>
+                                    <span class="divisoria"></span>
+                                    <a href="">Carrinho</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <!--textos-->
+            <div class="col-md-5" id="info-area">
+              <div class="container">
+                <div id="container-titulo">
+                  <img src="./img/titulo.png" alt="Nova FZ15 ABS" class="img-fluid" id="titulo">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                <a href="#" id="btn-comprar">Comprar Agora</a>
+              </div>
+            </div>
+
+            <!--Slider img-->
+            <div class="col-md-7" id="produto-area">
+              <div class="container">
+                <div class="row">
+                    <h3 id="color-name">Racing Blue</h3>
+                  <img src="" alt="Fz-15 modelo" class="img-fluid" id="slider-img">
+
+                  <div id="slider-area">
+                    <p>Deslize o slider para os lados</p>
+                    <input type="range" min="1" max="16" value="8" name="" id="slider">
+                  
+                  </div>
+                </div>
+              </div>
+              <!--Colors options-->
+              <div id="color-area">
+                <div class="container">
+
+                  <ul>
+                    <li>
+                      <input type="radio" class="inp_color" name="color" value="racing_blue" id="cor1" checked>
+                      <label for="cor1" class="colors">
+                        <span style="background:#0047ab;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" class="inp_color" name="color" value="magma_red"  id="cor2" >
+
+                      <label for="cor2" class="colors">
+                        <span style="background:#ff0000;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" class="inp_color" name="color"value="midnight_black" id="cor3" >
+
+                      <label for="cor3" class="colors">
+                        <span style="background:#3d3d3d;"></span>
+                      </label>
+                    </li>
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <h6>&copy; Criado por <a href="https://www.instagram.com/web_designer_rafael/" target="_blank">@web_designer_rafael</a></h6>
+      </div>
+    </footer>
+     <!--My js-->
+     <script src="./js/script.js"></script>
+</body>
+</html>

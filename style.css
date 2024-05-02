@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Squada+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    /* min-width: 100%; */
+    background: #f3f5f5;
+    /* overflow-x: hidden; */
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: relative;  
+}
+
+/*Sidebar*/
+
+.sidebar .header-menu .responsive{
+    display: none;
+}
+
+.container .sidebar{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #222;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar .header-menu, .sidebar .menu-content{
+    height: 100%;
+}
+
+.sidebar .header-menu .perfil{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 8px solid #333;
+}
+
+.sidebar .header-menu .perfil .header-menu-img img{
+    width: 100%;
+}
+
+.sidebar .header-menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar .menu-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+    width: 100%;
+    transition: .5s;
+}
+
+.sidebar .menu-content li{
+    list-style: none;
+}
+
+.sidebar .menu-content li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 3px;
+    transition: .5s;
+    text-align: center;
+    /* font-size: 1.3em; */
+}
+
+
+
+
+
+.sidebar .menu-content li a:hover{
+    background-color: #cccccc38;
+}
+
+
+/* content section */
+
+.container .content{
+    position: relative;
+    width: 100%;
+}
+
+.container .content .section{
+    padding: 50px;
+    margin-left:300px;
+    margin-right: 20px;
+    min-height: 100vh;
+}
+
+
+   /* Section About */
+
+   .container .content .section .title h1{
+    font-size: 4.5em;
+    color: #333;
+    /* margin-bottom: 90px; */
+    margin-top: 90px;
+}
+
+.container .content .section .title h1 b{
+    color: #bd5d38;
+}
+
+.container .content .section .title .email a{
+    color: #bd5d38;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container .content .section p, .container .content .section .social-media{
+    margin: 20px 0;
+}
+
+
+.container .content .section .social-media{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+   
+}
+
+.container .content .section .social-media li{
+    width: 50px;
+    height: 50px;
+    background: #333;   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 30px;
+    transition: .5s;
+}
+
+.container .content .section .social-media li a{
+    color: #fff;
+}
+
+.container .content .section .social-media li:hover{
+    background-color: #bd5d38;
+}
+
+.container .content .title h2{
+    text-transform: uppercase;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 90px;
+    margin-top: 20px;
+}
+
+.container .content .card{
+    width: 100%;
+    /* background: red; */
+    padding: 10px;
+    margin: 10px 0;
+
+}
+
+.container .content .card .card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .content .card .card-title{
+    text-transform: uppercase;
+}
+
+.container .content .card .card-title h3{
+    color: #222;
+    font-size: 1.5em;
+}
+
+.container .content .card .card-title h4{
+    color: #6C757D;
+    
+}
+
+.container .content .card .card-header cite{
+    color: #bd5d38;
+}
+
+.container .content #skills h4{
+    text-transform: uppercase;
+    color: #6C757D;
+    font-size: 1.5em;
+}
+
+.container .content #skills .listTools{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: #6C757D;
+    margin-top: 20px;
+}
+
+.container .content #skills .listTools li{
+    font-size: 3em;
+}
+
+.container .content #skills .workflow{
+    margin-top: 20px;
+}
+
+.container .content #skills .workflow .listWorkflow{
+    margin-top: 20px;
+    margin-left: 30px;
+    text-transform: capitalize;
+}
+
+.container .content #skills .workflow .listWorkflow li{
+    color: #6C757D;
+    list-style: none;
+}
+
+.container .content #skills .workflow .listWorkflow li::before{
+    content: '✓';
+    margin-right: 10px;
+}
+/*  Section interest  */
+
+.container .content #interest p{
+    color: #6C757D;
+}
+
+/*  section projects  */
+
+#projects .card{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #ccc;
+    overflow: hidden;
+}
+
+#projects .card .card-header{
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+
+#projects .card .card-header .card-title h3{
+    margin-left: 20px;
+}
+
+#projects .card .card-header .card-img{
+    width: 300px;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+#projects .card .card-header .card-img img{
+    width: 100%;
+}
+
+#projects .card a {
+    background-color: #222222ab;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transform: translateY(100px);
+
+    transition: .5s;
+}
+
+#projects .card:hover .card-content a{
+    transform: translateY(0px);
+    bottom: 0;
+    padding: 10px;
+
+}
+
+/*Responsive */
+
+@media only screen and (max-width:900px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;   
+    }
+    
+    /*Sidebar*/
+    
+    .sidebar .header-menu .perfil{
+        display: none;
+    }
+
+    .sidebar .header-menu .responsive{
+        display: block;
+    }
+    
+    
+    .container .sidebar{
+        position: fixed;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background: #222;
+        padding: 0 20px;
+        z-index: 1000;
+    }
+    
+    .sidebar .header-menu, .sidebar .menu-content{
+        width: 100%;
+    }
+    
+    .sidebar .header-menu .responsive{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .sidebar .header-menu .responsive a{
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 5px;
+        /* font-size: 1.5em; */
+        text-transform: capitalize;
+    }
+    
+    .sidebar .header-menu .responsive .toggle{
+        padding: 15px;
+        border: none;
+        background: none;
+        font-size: 3em;
+        color: #fff;
+    }
+    
+    .sidebar .menu-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        overflow: hidden;
+        width: 100%;
+        top: 30px;
+        height: 0;
+        transition: .5s;
+    }
+    
+    .sidebar .menu-content li{
+        list-style: none;
+    }
+    
+    .sidebar .menu-content li a{
+        text-decoration: none;
+        text-transform: capitalize;
+        display: block;
+        padding: 15px;
+        color: #fff;
+        letter-spacing: 3px;
+        transition: .5s;
+        font-size: 1.3em;
+        text-align: left;
+    }
+    
+    .sidebar .menu-content.active{
+        height: 400px;
+    }
+
+
+    /* container content */
+
+    .container .content{
+        position: relative;
+        width: 100%;
+    }
+    
+    .container .content .section{
+      margin: 20px 0;
+      padding:150px 25px;
+      max-width: 100%;
+      min-height: auto;
+    }
+    
+
+
+
+    /* Section About */
+
+.container .content .section .title h1{
+    font-size: 3.5em;
+    color: #333;
+    /* margin-bottom: 90px; */
+    margin-top: 20px;
+}
+
+.container .content .section .title h1 b{
+    color: #bd5d38;
+}
+
+.container .content .section .title .email a{
+    color: #bd5d38;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container .content .section p, .container .content .section .social-media{
+    margin: 20px 0;
+}
+
+
+.container .content .section .social-media{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+   
+}
+
+.container .content .section .social-media li{
+    width: 50px;
+    height: 50px;
+    background: #333;   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 30px;
+    transition: .5s;
+}
+
+.container .content .section .social-media li a{
+    color: #fff;
+}
+
+.container .content .section .social-media li:hover{
+    background-color: #bd5d38;
+}
+
+.container .content .title h2{
+    text-transform: uppercase;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 90px;
+    margin-top: 0;
+}
+
+.container .content .card{
+    width: 100%;
+    /* background: red; */
+    padding: 10px;
+    margin: 10px 0;
+
+}
+
+.container .content .card .card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .content .card .card-title{
+    text-transform: uppercase;
+}
+
+.container .content .card .card-title h3{
+    color: #222;
+    font-size: 1.5em;
+}
+
+.container .content .card .card-title h4{
+    color: #6C757D;
+    
+}
+
+.container .content .card .card-header cite{
+    color: #bd5d38;
+}
+
+.container .content #skills h4{
+    text-transform: uppercase;
+    color: #6C757D;
+    font-size: 1.5em;
+}
+
+.container .content #skills .listTools{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: #6C757D;
+    margin-top: 20px;
+}
+
+.container .content #skills .listTools li{
+    font-size: 3em;
+}
+
+.container .content #skills .workflow{
+    margin-top: 20px;
+}
+
+.container .content #skills .workflow .listWorkflow{
+    margin-top: 20px;
+    margin-left: 30px;
+    text-transform: capitalize;
+}
+
+.container .content #skills .workflow .listWorkflow li{
+    color: #6C757D;
+    list-style: none;
+}
+
+.container .content #skills .workflow .listWorkflow li::before{
+    content: '✓';
+    margin-right: 10px;
+}
+/*  Section interest  */
+
+.container .content #interest p{
+    color: #6C757D;
+}
+
+/*  section projects  */
+
+#projects .card{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #ccc;
+}
+
+#projects .card .card-header{
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+
+#projects .card .card-header .card-title h3{
+    margin-left: 20px;
+}
+
+#projects .card .card-header .card-img{
+    width: 300px;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+#projects .card .card-header .card-img img{
+    width: 100%;
+}
+
+#projects .card a {
+    background-color: #222;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    transform: translateY(0);
+    padding: 10px;
+
+}
+
+
+}
+
+/* Responsive mobile*/
+
+@media only screen and (max-width:700px){
+    .container .content .card .card-header{
+        flex-direction: column;
+    }
+
+    #projects .card{
+        flex-direction: column;
+    }
+
+    
+    #projects .card .card-header .card-img{
+        width: 100%;
+        height: auto;
+        /* border: 1px solid; */
+    }
+    
+}

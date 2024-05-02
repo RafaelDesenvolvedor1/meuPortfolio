@@ -1,0 +1,3 @@
+Uma landing page que eu desenvolvi para afins de estudos,
+utilizei muitas ferramentas para montar o projeto, pesquisei referencias,
+montei rascunhos, wireframes e finalmente codifiquei a página. Uma experiência completa de projeto.
