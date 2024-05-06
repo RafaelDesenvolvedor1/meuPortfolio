@@ -12,6 +12,31 @@ window.addEventListener('load',()=>{
       document.querySelectorAll('.menu-content li a')[c].addEventListener('click', menuOpen)
    }
 
+   $('.mobileProjects').hide()
+
+
+   $('#webBtn').click(()=>{
+      $('.webProjects').show()
+      $('.mobileProjects').hide()
+      $('#webBtn').addClass('active')
+      $('#mobileBtn').removeClass('active')
+
+
+   })
+   $('#mobileBtn').click(()=>{
+      $('.mobileProjects').show()
+      $('.webProjects').hide()
+      $('#mobileBtn').addClass('active')
+      $('#webBtn').removeClass('active')
+
+
+
+   })
+
+ 
+
+
+
 
    /* carregando os projetos na pagina com jquery ajax */
 
