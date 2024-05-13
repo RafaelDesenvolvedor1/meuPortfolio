@@ -249,6 +249,10 @@ body{
 
 /*  section projects  */
 
+#projects{
+    margin-bottom:1rem;
+}
+
 #projects .card{
     display: flex;
     position: relative;
@@ -324,6 +328,29 @@ body{
 
 #projects .sectionButton button.active{
     font-weight:bold;
+}
+
+
+footer{
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    background:#222;
+    color:#ccc;
+    padding:1rem;
+    display:flex;
+    justify-content:center;
+    font-size:1.2rem;
+}
+
+footer a{
+    text-decoration:none;
+    color:#fff;
+}
+
+footer a:hover{
+    color:#ccc;
 }
 /*Responsive */
 
